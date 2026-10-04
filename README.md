@@ -65,10 +65,12 @@ I want the pipeline to identify these records instead of allowing them to affect
 
 ## 3. Late Events
 
-    An event may happen at 10.05 AM but reach the processing system at 10.08 AM. I want to understand how real time data pipelines deal with these delayed events.
+    An event may happen at 10.05 AM but reach the processing system at 10.08 AM. 
+I want to understand how real time data pipelines deal with these delayed events.
 
 ## 4. Sudden Increase In Events*
-    Normally the system may receive around 100 events per minute but during the sale, it could suddenly receive thousands of events. I want to test how the pipeline behaves when the event volume increases.
+    Normally the system may receive around 100 events per minute but during the sale, it could suddenly receive thousands of events. 
+I want to test how the pipeline behaves when the event volume increases.
 
 ## Business Questions
 
@@ -101,7 +103,7 @@ After Processing the data, I want the system to answer questions such as:
 
  ## Expected Outcome :
 
-    By Completing this project, I want to understand How the real world streaming data pipeline is designed and implemented.
+    By Completing this project, I want to understand How the real world streaming data pipeline is designed and implemented. 
 The final pipeline should be able to take continuously generated E-commerce events, process them, identify problematic data and produce reliable information that can be used for analysis.
 
 I will also document the problem I face while building the project and how i solve them.
