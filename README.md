@@ -42,7 +42,7 @@ I want to built a pipeline that can :
 7. Calculate useful business metrics.
 8. Store the processed data for further analysis.
 
-## Problems I want to handle
+## Problems I Want To Handle
 
 ## 1. Duplicate Events
    Sometimes the same event may be received more than once.
@@ -82,7 +82,7 @@ After Processing the data, I want the system to answer questions such as:
 - How many invalid events were rejected?
 - Did the event volume suddenly increase or decrease?
 
-  ## Initial Scope
+## Initial Scope
 
   For the first version i will focus on :
     - Customer events
@@ -98,7 +98,7 @@ After Processing the data, I want the system to answer questions such as:
 
   I will add more features once the desired pipeline is working.
 
-   ## Expected Outcome :
+ ## Expected Outcome :
 
     By Completing this project, I want to understand How the real world streaming data pipeline is designed and implemented.
 The final pipeline should be able to take continuously generated E-commerce events, process them, identify problematic data and produce reliable information that can be used for analysis.
