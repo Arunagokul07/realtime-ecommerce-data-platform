@@ -103,7 +103,7 @@ After Processing the data, I want the system to answer questions such as:
 
  ## Expected Outcome :
 
-    By Completing this project, I want to understand How the real world streaming data pipeline is designed and implemented. 
+   I want to understand How the real world streaming data pipeline is designed and implemented. 
 The final pipeline should be able to take continuously generated E-commerce events, process them, identify problematic data and produce reliable information that can be used for analysis.
 
 I will also document the problem I face while building the project and how i solve them.
