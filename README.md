@@ -64,9 +64,10 @@ Price = NULL
 I want the pipeline to identify these records instead of allowing them to affect the final analysis.
 
 ## 3. Late Events
+
     An event may happen at 10.05 AM but reach the processing system at 10.08 AM. I want to understand how real time data pipelines deal with these delayed events.
 
-## 4. Sudden Increase In Events
+## 4. Sudden Increase In Events*
     Normally the system may receive around 100 events per minute but during the sale, it could suddenly receive thousands of events. I want to test how the pipeline behaves when the event volume increases.
 
 ## Business Questions
