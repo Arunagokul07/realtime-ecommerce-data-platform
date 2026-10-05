@@ -25,9 +25,9 @@ The contract will be used for event generation, validation, streaming processing
 | event_id | string | yes | unique |
 | event_type | string | yes | type of action that occurred |
 | customer_id | string | yes | Customer Associated with the event |
-| product_id | String | conditional | product associated with the event |
+| product_id | string | conditional | product associated with the event |
 | order_id | string | conditional | order associated with the event |
-| event_timestamp | timestamp | yes | time when the event occured |
+| event_timestamp | timestamp | yes | time when the event occurred. must use ISO 8601 format in UTC  |
 
 
 
