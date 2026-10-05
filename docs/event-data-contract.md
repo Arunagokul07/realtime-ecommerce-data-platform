@@ -11,8 +11,12 @@ The contract will be used for event generation, validation, streaming processing
   Examples:
    - PRODUCT_VIEW
    - ADD_TO_CART
+   - REMOVE_FROM_CART
    - ORDER_CREATED
+   - ORDER_CANCELLED
    - PAYMENT_SUCCESS
+   - PAYMENT_FAILED
+   - PAYMENT_REFUNDED
    - ORDER_CANCELLED
    - ORDER_SHIPPED
    - ORDER_DELIVERED
@@ -28,6 +32,32 @@ The contract will be used for event generation, validation, streaming processing
 | product_id | string | conditional | product associated with the event |
 | order_id | string | conditional | order associated with the event |
 | event_timestamp | timestamp | yes | time when the event occurred. must use ISO 8601 format in UTC  |
+
+## Allowed Event Types
+  The following event types are supported by the e-commerce event pipeline :
+
+    - PRODUCT_VIEW
+    - ADD_TO_CART
+    - REMOVE_FROM_CART
+    - ORDER_CREATED
+    - ORDER_CANCELLED
+    - PAYMENT_SUCCESS
+    - PAYMENT_FAILED
+    - PAYMENT_REFUNDED
+    - ORDER_SHIPPED
+    - ORDER_DELIVERED
+    - ORDER_RETURNED
+
+## Add Validation Rules
+- 'event_id' must not be NULL and must be unique.
+- 'event_type' must not be NULL and must match any one of the allowed event_types.
+- 'customer_id' must not be null and must refer to a valid customer.
+- 'product_id' is required for product related events such as 'PRODUCT_VIEW', ADD_TO_CART' AND 'REMOVE_FROM_CART'.
+- 'order_id' is required for orders and payment related events.
+- 'product_id' and 'order_id' can be null when they are applicable to the event.
+- 'event_timestamp' must not be null.
+- 'event_timestamp' must use ISO 8601 format in UTC.
+    
 
 
 
