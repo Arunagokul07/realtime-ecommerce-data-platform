@@ -80,7 +80,6 @@ The contract will be used for event generation, validation, streaming processing
   "event_timestamp": "2026-10-05T10:30:15Z"
 }
 
-## Why Are We Doing This ?
 
 
 
