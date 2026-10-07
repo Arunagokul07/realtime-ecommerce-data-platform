@@ -25,7 +25,7 @@ The contract will be used for event generation, validation, streaming processing
 
 | Field | Data Type | Required | Description |
 |-------|-----------|----------|-------------|
-| event_id | string | yes | unique | identifier for the event |
+| event_id | string | yes | unique identifier for the event |
 | event_type | string | yes | type of action that occurred |
 | customer_id | string | yes | Customer Associated with the event |
 | product_id | string | conditional | product associated with the event |
@@ -51,7 +51,7 @@ The contract will be used for event generation, validation, streaming processing
 - 'event_id' must not be NULL and must be unique.
 - 'event_type' must not be NULL and must match any one of the allowed event_types.
 - 'customer_id' must not be NULL and must refer to a valid customer.
-- 'product_id' is required for product related events such as 'PRODUCT_VIEW', ADD_TO_CART' AND 'REMOVE_FROM_CART'.
+- 'product_id' is required for product related events such as 'PRODUCT_VIEW', 'ADD_TO_CART' AND 'REMOVE_FROM_CART'.
 - 'order_id' is required for orders and payment related events.
 - 'product_id' and 'order_id' can be NULL when they are not applicable to the event.
 - 'event_timestamp' must not be NULL.
